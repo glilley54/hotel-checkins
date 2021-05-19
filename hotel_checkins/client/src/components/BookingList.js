@@ -1,12 +1,13 @@
 import BookingItem from './BookingItem';
 
-const BookingList = ({ bookings }) => {
+const BookingList = ({ bookings, deleteBooking }) => {
     return (
         <div>
             {bookings.map(booking => {
                 return (
                     <BookingItem
                         booking={booking}
+                        deleteBooking={deleteBooking}
                     />
                 )
             })}

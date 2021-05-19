@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import BookingList from '../components/BookingList'
-import BookingService from '../services/BookingService'
+import BookingService, {deleteBooking} from '../services/BookingService'
 import BookingForm from '../components/BookingForm';
 
 const BookingContainer = () => {
@@ -18,14 +18,19 @@ const BookingContainer = () => {
         setBookings(temp);
     }
 
-
+    const deleteBooking = idToDelete => {
+        BookingService.deleteBooking(idToDelete).then(() => {
+            setBookings(bookings.filter(booking =>booking._id !== idToDelete))
+        })
+    }
+    
 
     return (
         <>
             <div>
                 <h1>Hotel Bookings</h1>
                 <BookingForm addBooking={addBooking} postBooking={BookingService.postBooking} />
-                <BookingList bookings={bookings} />
+                <BookingList bookings={bookings} deleteBooking = {deleteBooking} />
             </div>
         </>
     )
