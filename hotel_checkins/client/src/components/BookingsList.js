@@ -1,19 +1,15 @@
+import BookingItem from './BookingItem';
 
-
-
-
-
-const BookingsList = () => {
-
-   
-
-
-    
-
-
+const BookingsList = ({ bookings }) => {
     return (
         <div>
-            <p>This is the bookings list.</p>
+            {bookings.map(booking => {
+                return (
+                    <BookingItem
+                        booking={booking}
+                    />
+                )
+            })}
         </div>
     )
 
