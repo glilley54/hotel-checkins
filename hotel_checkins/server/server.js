@@ -8,10 +8,10 @@ app.use(cors());
 
 MongoClient.connect('mongodb://localhost:27017')
   .then(client => {
-    const db = client.db('games_hub');
-    const gamesCollection = db.collection('games');
-    const gamesRouter = createRouter(gamesCollection);
-    app.use('/api/games', gamesRouter);
+    const db = client.db('hotel_checkins');
+    const bookingsCollection = db.collection('bookings');
+    const bookingsRouter = createRouter(bookingsCollection);
+    app.use('/api/bookings', bookingsRouter);
   })
   .catch(console.error);
 
