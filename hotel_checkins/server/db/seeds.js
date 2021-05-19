@@ -5,17 +5,17 @@ db.bookings.insertMany ([
     { 
     name: "Kieran",
     email: "kieran@hotmail.com",
-    status: true
+    status: "True"
     },
     { 
         name: "Gordon",
         email: "gordon@gmail.com",
-        status: false
+        status: "False"
     },
     { 
         name: "Niall",
         email: "niall@gmail.com",
-        status: true
+        status: "True"
     }
 
 ]);

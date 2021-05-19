@@ -26,8 +26,8 @@ const BookingForm = ({addBooking, postBooking}) => {
             <label htmlFor="email">Email:</label>
             <input onChange={onChange} type="text" id="email"  required/>
 
-            <label htmlFor="status">Status: </label> 
-            <input onChange={onChange} type="checkbox" value="false" id="status"/>
+            <label htmlFor="status">Checked In: </label> 
+            <input onChange={onChange} type="text" id="status"/>
 
             <input type="submit" value="Save" />
         </form>

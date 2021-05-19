@@ -24,8 +24,8 @@ const BookingContainer = () => {
         <>
             <div>
                 <h1>Hotel Bookings</h1>
-                <BookingList bookings={bookings} />
                 <BookingForm addBooking={addBooking} postBooking={BookingService.postBooking} />
+                <BookingList bookings={bookings} />
             </div>
         </>
     )
