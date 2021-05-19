@@ -1,10 +1,10 @@
-import BookingsContainer from './containers/BookingsContainer';
+import BookingContainer from './containers/BookingContainer';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-    <BookingsContainer/>
+    <BookingContainer/>
     </div>
   );
 }

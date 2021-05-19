@@ -3,18 +3,18 @@ db.dropDatabase();
 
 db.bookings.insertMany ([
     { 
-    name: "Test",
-    email: "test@test.com",
+    name: "Kieran",
+    email: "kieran@hotmail.com",
     status: true
     },
     { 
-        name: "Test2",
-        email: "test2@test.com",
+        name: "Gordon",
+        email: "gordon@gmail.com",
         status: false
     },
     { 
-        name: "Test3",
-        email: "test3@test.com",
+        name: "Niall",
+        email: "niall@gmail.com",
         status: true
     }
 

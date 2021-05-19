@@ -1,6 +1,6 @@
 const baseURL = 'http://localhost:5000/api/bookings/'
 
- const BookingsService = {
+ const BookingService = {
   getBookings() {
     return fetch(baseURL)
     .then(res => res.json())
@@ -22,4 +22,4 @@ const baseURL = 'http://localhost:5000/api/bookings/'
   }
 }
 
-export default BookingsService
+export default BookingService

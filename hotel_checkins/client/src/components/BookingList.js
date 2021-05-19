@@ -1,6 +1,6 @@
 import BookingItem from './BookingItem';
 
-const BookingsList = ({ bookings }) => {
+const BookingList = ({ bookings }) => {
     return (
         <div>
             {bookings.map(booking => {
@@ -15,4 +15,4 @@ const BookingsList = ({ bookings }) => {
 
 };
 
-export default BookingsList;
+export default BookingList;
