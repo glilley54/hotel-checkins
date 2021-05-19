@@ -19,18 +19,29 @@ const BookingForm = ({addBooking, postBooking}) => {
     }
     
     return (
-        <form className="" onSubmit={handleSubmit} method="post">
-            <label htmlFor="name">Name:</label>
-            <input  onChange = {onChange} type="text" id="name" required/>
-
-            <label htmlFor="email">Email:</label>
-            <input onChange={onChange} type="text" id="email"  required/>
-
-            <label htmlFor="status">Checked In: </label> 
-            <input onChange={onChange} type="text" id="status"/>
-
-            <input type="submit" value="Save" />
+        <div>
+        <form className="form" onSubmit={handleSubmit} method="post">
+            <div className="input">
+                <label htmlFor="name">Name: </label>
+                <input  onChange = {onChange} type="text" id="name" required/>
+                <br></br>
+            </div>
+            <div className="input">
+                <label htmlFor="email">Email: </label>
+                <input onChange={onChange} type="text" id="email"  required/>
+                <br></br>
+            </div>
+            <div className="input">
+                <label htmlFor="status">Checked In: </label> 
+                <input onChange={onChange} type="text" id="status"/>
+                <br></br>
+            </div>
+            <div className="input">
+                <input className="btn btn-outline-dark" type="submit" value="Save" />
+            </div>
+            <hr></hr>
         </form>
+        </div>
 
     )
 

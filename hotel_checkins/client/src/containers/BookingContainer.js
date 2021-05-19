@@ -28,7 +28,9 @@ const BookingContainer = () => {
     return (
         <>
             <div>
-                <h1>Hotel Bookings</h1>
+                <header>
+                    <h1>Hotel Clanifornia</h1>
+                </header>
                 <BookingForm addBooking={addBooking} postBooking={BookingService.postBooking} />
                 <BookingList bookings={bookings} deleteBooking = {deleteBooking} />
             </div>
